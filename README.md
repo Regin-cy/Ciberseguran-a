@@ -15,18 +15,26 @@ A ideia é montar um laboratório usando máquinas virtuais, conhecer algumas fe
 - **Nmap:** ferramenta para identificar portas e serviços.
 - **VirtualBox:** programa utilizado para executar as máquinas virtuais.
 
+- ## 🔐 Medusa
+
+A Medusa foi instalada no Kali Linux. Estou estudando seu funcionamento e sua utilização em auditorias de autenticação em ambientes controlados.
+
 ## 💻 Montagem do laboratório
 
 Para começar, configurei duas máquinas virtuais no VirtualBox:
 
 - Kali Linux
+![Kali Linux](imagens/kalilinux.png)
+
 - Metasploitable 2
+![Metasploitable 2](imagens/metasploitable.png)
 
 Configurei as duas em uma rede Host-Only para que pudessem se comunicar em um ambiente de laboratório isolado.
 
 ## 🔎 Identificação de serviços
 
 Utilizei o Nmap para verificar quais serviços estavam disponíveis no Metasploitable 2.
+![Resultado do Nmap](imagens/nmap.png)
 
 Os resultados encontrados foram:
 
@@ -39,6 +47,7 @@ Os resultados encontrados foram:
 | 445 | SMB |
 
 ## 🌐 Acesso ao DVWA
+![DVWA - Brute Force](imagens/dvwa.png)
 
 Consegui acessar o DVWA pelo navegador do Kali Linux.
 
